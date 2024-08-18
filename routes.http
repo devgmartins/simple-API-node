@@ -1,0 +1,27 @@
+POST http://localhost:8080/create
+Content-Type: application/json
+
+{
+    "title": "Javascript or Python?",
+    "description": "In this video i speak about Javascript and Python",
+    "duration": 2400
+}
+
+###
+
+GET http://localhost:8080/videos
+
+###
+
+PUT http://localhost:8080/video/2fb5da99-5bb9-4cc5-a409-be2fb9f5a5c4
+Content-Type: application/json
+
+{
+    "title": "What my opinion about PHP?",
+    "description": "In this video i expressed all my opinion about PHP",
+    "duration": 5000
+}
+
+###
+
+DELETE http://localhost:8080/delete/video/8bbfc004-acb2-438b-ab3a-773a9bb8837b
