@@ -1,9 +1,9 @@
 import { fastify } from "fastify";
-import { MemoryDb } from "./database/Database-memory.js"
+// import { MemoryDb } from "./database/Database-memory.js"
 import { PostgresDb } from "./database/PostgresDb.js";
 
 const server = fastify();
-const Db = new MemoryDb();
+// const Db = new MemoryDb();
 const PostGresDb = new PostgresDb();
 
 server.get("/videos", (request, reply) => {
